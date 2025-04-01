@@ -1,0 +1,209 @@
+@charset "UTF-8";
+
+body{
+    font-family: "Hiragino Kaku Gothic Pro","Meiryo","sans-serif";
+    font-size: 16px;
+    background-color: #F5F5F5;
+}
+
+/* 共通 */
+
+.w_inner{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+h2{
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+a{
+    font-family: "Arial", sans-serif;
+}
+
+h3{
+    font-family: "Sawarabi Mincho", serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+p{
+    font-family: "Noto Serif JP", serif;
+}
+
+/* ヘッダー */
+
+a{
+    text-decoration: none;
+    color: #524D4D;
+}
+
+nav a{
+    display: inline-block;
+    border-radius: 3px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+nav a:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: #F5F5F5;
+    border-radius: 3px;
+}
+
+nav a:not(:hover) {
+    transition-delay: 0.2s;
+}
+
+.header_1{
+    background-image: url(../img/restaurant\ hedder.jpg);
+    height: 164px;
+}
+
+.logo{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 11px;
+}
+
+.logo img{
+    width: 172px;
+    height: 104px;
+}
+
+header nav{
+    margin-bottom: 21px;
+}
+
+header ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0 87px;
+}
+
+header ul li{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* トップへ戻るボタン */
+
+.button{
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+}
+
+.button a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 80px;
+    height: 80px;
+    background-color: #ccc;
+    border-radius: 50vh;
+    transition: 0.3s;
+  }
+  
+/* 上矢印 */
+
+  .button a::after {
+    content: '';
+    width: 7px;
+    height: 7px;
+    border-top: 3px solid #333;
+    border-left: 3px solid #333;
+    transform: rotate(45deg);
+    transition: 0.3s;
+  }
+  
+  .button span {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+  }
+  
+  .button a:hover {
+    background-color: #333333;
+  }
+  
+  .button a:hover::after {
+    border-top: 3px solid #f2f2f2;
+    border-left: 3px solid #f2f2f2;
+    transform: translateY(-5px) rotate(45deg);
+  }
+
+/* フッター */
+
+footer{
+    position: relative; 
+}
+
+.logo_2{
+    margin-top: 56px;
+    margin-bottom: 10px;
+}
+
+.logo_2 img{
+    width: 243px;
+    height: 147px;
+}
+
+footer p{
+    margin: 11px 0 0 0;
+}
+
+.res_2{
+    margin-top: 34px;
+}
+
+footer h3{
+    margin: 9px 0 0 0;
+}
+
+footer ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    align-items: end;
+    width: 700px;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+footer ul li a{
+    font-weight: bold;
+    display: inline-block;
+    border-radius: 3px;
+    transition: color 0.5s ease, background-color 0.5s ease;
+}
+
+footer ul li a:hover {
+    background: rgba(0, 0, 0, 0.5);
+    color: #F5F5F5;
+    border-radius: 3px;
+}
+
+footer ul li a:not(:hover) {
+    transition-delay: 0.2s;
+}
+
+.copy{
+    display: flex;
+    align-items: center;
+    background-color: #E1E1E1;
+    height: 49px;
+    width: auto;
+    margin-top: 16px;
+}
+
+.copy p{
+    font-family: "Arial", sans-serif;
+    font-size: 24px;
+}
