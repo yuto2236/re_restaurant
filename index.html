@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>restaurant</title>
     <meta name="description" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&family=Sawarabi+Mincho&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -21,24 +22,51 @@
             </div>
             <nav class="w_inner">
                 <ul>
-                    <li><a href="">CONCEPT</a></li>
-                    <li><a href="">MENU</a></li>
-                    <li><a href="">PARTY</a></li>
-                    <li><a href="">OWNER CHEF</a></li>
-                    <li><a href="">RESERVATION</a></li>
-                    <li><a href="">ACCESEE</a></li>
-                    <li><a href="">NEWS</a></li>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="concept.html">CONCEPT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="party.html">PARTY</a></li>
+                    <li><a href="owner.html">OWNER CHEF</a></li>
+                    <li><a href="reserv.html">RESERVATION</a></li>
+                    <li><a href="accesee.html">ACCESEE</a></li>
+                    <li><a href="news.html">NEWS</a></li>
                 </ul>
             </nav>
         </div>
-        <div class="header_img w_inner">
-            <img src="img/tony-lee-8IKf54pc3qk-unsplash (1).jpg" alt="">
+
+        <div class="slideshow">
+            <img src="img/tony-lee-8IKf54pc3qk-unsplash (1).jpg" class="slide active" alt="">
+            <img src="img/restaurant_inner(2).jpg" class="slide" alt="">
+            <img src="img/restaurant_outside.jpg" class="slide" alt="">
+            <img src="img/red-wine.jpg" class="slide" alt="">
+            <img src="img/restaurant_party.jpg" class="slide" alt="">
+                <!-- 前後のボタン -->
+            <button class="prev">‹</button>
+            <button class="next">›</button>
+
+            <!-- インジケーター（●●●） -->
+            <div class="indicators">
+                <span class="dot active" data-index="0"></span>
+                <span class="dot" data-index="1"></span>
+                <span class="dot" data-index="2"></span>
+                <span class="dot" data-index="3"></span>
+                <span class="dot" data-index="4"></span>
+            </div>
         </div>
+        
     </header>
 
     <main>
 
-        <h3 class="special w_inner">11月の季節限定メニューはこちら</h3>
+        <h3 class="special_menu w_inner">
+            <a href="">11月の季節限定メニューはこちら</a>
+        </h3>
+
+        <!-- TOPへ戻るボタン -->
+
+        <div class="button">
+            <a href="index.html"><span>ボタンをクリック</span></a>
+          </div>
 
         <!-- コンセプト -->
 
@@ -260,21 +288,25 @@
                 <p>ご予約</p>
                 <h3>TEL：03-0000-0000</h3>
             </div>
-            <ul>
-                <li><a href="">CONCEPT</a></li>
-                <li><a href="">MENU</a></li>
-                <li><a href="">PARTY</a></li>
-                <li><a href="">OWNER CHEF</a></li>
-                <li><a href="">RESERVATION</a></li>
-                <li><a href="">ACCESEE</a></li>
-                <li><a href="">NEWS</a></li>
-            </ul>
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="concept.html">CONCEPT</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                    <li><a href="party.html">PARTY</a></li>
+                    <li><a href="owner.html">OWNER CHEF</a></li>
+                    <li><a href="reserv.html">RESERVATION</a></li>
+                    <li><a href="accesee.html">ACCESEE</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                </ul>
         </div>
     </footer>
 
     <div class="copy">
         <p class="w_inner">&copy;××××××××</p>
     </div>
+
+    
+    <script src="script.js"></script>
 
 </body>
 
