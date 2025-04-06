@@ -45,3 +45,24 @@ document.addEventListener("DOMContentLoaded", function () {
 
     interval = setInterval(showNextSlide, 3000);
 });
+
+// トップへ戻る
+
+document.addEventListener('DOMContentLoaded', function() {
+    var backToTopButton = document.getElementById('back-to-top');
+
+    backToTopButton.addEventListener('click', function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+document.querySelectorAll('.menu-item > a').forEach(item => {
+    item.addEventListener('click', function(event) {
+        event.preventDefault();
+        let submenu = this.nextElementSibling;
+        if (submenu.style.display === "block") {
+            submenu.style.display = "none";
+        } else {
+            submenu.style.display = "block";
+        }
+    });
+});
