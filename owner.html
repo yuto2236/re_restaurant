@@ -8,6 +8,68 @@
     <meta name="description" content="">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/common.css">
+    <style>
+        .section {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .chef-intro {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .chef-intro img {
+      max-width: 250px;
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .chef-intro-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    h2, h3 {
+        font-family: "Sawarabi Mincho", serif;
+        color: #111010;
+        font-weight: bold;
+    }
+
+    p {
+      line-height: 1.8;
+      margin-top: 1rem;
+      color: #676363;
+    }
+
+    ul {
+      padding-left: 1.5rem;
+    }
+
+    li{
+        font-family: "Noto Serif JP", serif;
+        color: #676363;
+    }
+
+    .beji{
+        display: flex;
+        justify-content: space-between;
+        max-width: 900px;
+    }
+
+    .beji img{
+        max-width: 250px;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    </style>
 </head>
 
 <body>
@@ -35,6 +97,45 @@
         </header>
 
         <main>
+
+            <section class="section">
+                <div class="chef-intro">
+                  <img src="./img/owner.jpg" alt="オーナーシェフ 山田太郎の写真">
+                  <div class="chef-intro-text">
+                    <h2>オーナーシェフ 山田 太郎</h2>
+                    <p>
+                      1980年、京都府生まれ。<br>
+                      幼いころから料理人の父に影響を受け、食への興味を深める。<br>
+                      地元の調理師専門学校を卒業後、<strong>イタリア・トスカーナ地方で5年間修行</strong>を積み、本場の郷土料理と食文化を学ぶ。<br>
+                      帰国後は都内の有名イタリアンレストランで副料理長を務め、地元に戻り「四季の恵みダイニング」をオープン。
+                    </p>
+                  </div>
+                </div>
+            
+                <h3>料理への想い</h3>
+                <p>
+                  「料理は、素材との対話だと思っています。<br>
+                  調理を通して、その素材が最も美味しく感じられる瞬間を引き出したい。<br>
+                  そして、誰かの記憶に残るような“味わいのある時間”を提供したい」<br><br>
+                  そう語る山田シェフの料理には、手間と時間、そして食材への深い敬意が込められています。
+                </p>
+            
+                <h3>シェフのこだわり</h3>
+                <ul>
+                  <li>地元・京都の農家や漁師から毎朝届く新鮮な旬素材</li>
+                  <li>出汁やソースはすべて自家製、化学調味料不使用</li>
+                  <li>季節ごとの特別コースは月替わりで内容が一新</li>
+                </ul>
+            
+                <h3>代表メニュー「季節の前菜盛り合わせ」</h3>
+                <div class="beji">
+                    <p>
+                        その季節にしか味わえない素材を使い、見た目にも華やかに仕上げた一皿。<br>
+                        訪れたお客さまの「おぉ…」という驚きと笑顔を、何より大切にしています。
+                    </p>
+                    <img src="./img/bejita.jpg" alt="前菜">
+                </div>
+              </section>
 
                     <!-- TOPへ戻るボタン -->
 
